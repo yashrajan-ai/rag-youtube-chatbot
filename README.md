@@ -10,7 +10,7 @@ Instead of sending the entire transcript to an LLM, the application retrieves on
 
 ## 🌟 Demo
 
-🚀 **Live Application:** Add your Streamlit deployment link here
+🚀 **Live Application:** https://rag-youtube-chatbot.streamlit.app/
 
 📂 **GitHub Repository:**  
 https://github.com/yashrajan-ai/rag-youtube-chatbot
