@@ -189,20 +189,8 @@ rag-youtube-chatbot/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
-├── .env.example
-│
-├── data/
-│   └── ...
-│
-├── src/
-│   └── ...
-│
-└── assets/
-    └── screenshots/
+└── .gitignore
 ```
-
-> The exact structure may vary depending on your implementation.
 
 ---
 
@@ -386,17 +374,6 @@ Currently, the chatbot may depend on:
 The quality of the final answer also depends on the quality of the retrieved context.
 
 ---
-
-# 🔐 Security
-
-Never commit sensitive information such as:
-
-```text
-.env
-API keys
-Passwords
-Access tokens
-Private credentials
 ```
 
 Recommended `.gitignore`:
@@ -409,28 +386,6 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
-```
-
----
-
-# 📸 Screenshots
-
-Add screenshots of your application here:
-
-```text
-assets/
-└── screenshots/
-    ├── home.png
-    ├── video.png
-    └── chatbot.png
-```
-
-Then add them to the README:
-
-```markdown
-![Home](assets/screenshots/home.png)
-
-![Chatbot](assets/screenshots/chatbot.png)
 ```
 
 ---
@@ -496,12 +451,6 @@ git push origin feature/new-feature
 
 ---
 
-# 📜 License
-
-This project is available under the MIT License.
-
----
-
 # 👨‍💻 Author
 
 ## Yash Rajan
@@ -519,7 +468,7 @@ This project is available under the MIT License.
 ### 🔗 Connect With Me
 
 - 💻 GitHub: https://github.com/yashrajan-ai
-- 🔗 LinkedIn: Add your LinkedIn profile here
+- 🔗 LinkedIn: www.linkedin.com/in/yash-rajan1
 
 ---
 
