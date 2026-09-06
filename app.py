@@ -434,21 +434,26 @@ def fetch_with_ytdlp(
         raise RuntimeError("yt-dlp found no subtitle tracks for this video.")
 
     # Use the first VTT URL that yt-dlp exposes.
+    # Prefer VTT because it is plain subtitle text.
     selected_code = None
     subtitle_url = None
-
+    subtitle_ext = None
+    
     for item in tracks:
         if isinstance(item, tuple):
             selected_code, entry = item
         else:
             selected_code, entry = None, item
-
-        if entry.get("ext") in {"vtt", "json3"} and entry.get("url"):
+    
+        if entry.get("ext") == "vtt" and entry.get("url"):
             subtitle_url = entry["url"]
+            subtitle_ext = "vtt"
             break
-
+    
     if not subtitle_url:
-        raise RuntimeError("No usable subtitle track was returned by yt-dlp.")
+        raise RuntimeError(
+            "No usable VTT subtitle track was returned by yt-dlp."
+        )
 
     import requests
 
