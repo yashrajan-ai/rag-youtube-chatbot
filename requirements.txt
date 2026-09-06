@@ -1,10 +1,12 @@
 streamlit
 python-dotenv
 youtube-transcript-api
-langchain-core
-langchain-classic
+yt-dlp
+langchain
 langchain-community
+langchain-core
 langchain-huggingface
+langchain-text-splitters
 faiss-cpu
-huggingface-hub
 sentence-transformers
+huggingface-hub
